@@ -9,13 +9,12 @@
 int main(void)
 {
 	int i = 97;
-	char s = "\n";
 
 	while (i <= 122)
 	{
 		putchar(i);
 		i++;
         }
-	putchar(s);
+	putchar('\n');
 	return (0);
 }
