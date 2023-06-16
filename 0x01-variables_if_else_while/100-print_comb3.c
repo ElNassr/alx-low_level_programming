@@ -15,16 +15,16 @@ int main(void)
 	while (i <= 56)
 	{
 		j = c;
-		while (j <= 57 )
+		while (j <= 57)
 		{
 			putchar(i);
 			putchar(j);
 			j++;
-		}
-		if (i != 56)
-		{
-			putchar(44);
-			putchar(32);
+			if (i != 56)
+			{
+				putchar(44);
+				putchar(32);
+			}
 		}
 		i++;
 		c++;
