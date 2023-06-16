@@ -20,7 +20,7 @@ int main(void)
 		while (j <= 56)
 		{
 			k = c2;
-			while (k <= 57);
+			while (k <= 57)
 			{
 				putchar(i);
 				putchar(j);
