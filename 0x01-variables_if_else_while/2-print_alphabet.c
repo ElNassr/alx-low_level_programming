@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- *
- * Return: 0on success
- */
+* main - entry point
+*
+* Return: 0 on success
+*/
 int main(void)
 {
 	int i = 97;
@@ -14,7 +14,7 @@ int main(void)
 	{
 		putchar(i);
 		i++;
-        }
+	}
 	putchar('\n');
 	return (0);
 }
