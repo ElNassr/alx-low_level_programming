@@ -8,10 +8,10 @@
  */
 int main(void)
 {
-	int i = "a";
+	int i = 97;
 	char s = "\n";
 
-	while (i <= "z")
+	while (i <= 122)
 	{
 		putchar(i);
 		i++;
