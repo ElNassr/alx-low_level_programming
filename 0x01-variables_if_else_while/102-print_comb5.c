@@ -8,16 +8,10 @@
 */
 int main(void)
 {
-	int i = 48;
-	int j = 49;
-	int c1 = 49;
-	int k = 50;
-	int c2 = 50;
-	int c3 = 50;
-	int l = 51;
-	int c4 = 51;
-	int c5 = 51;
-	int c6 = 51;
+	int i, j, k = 48;
+	int l, c1 = 49;
+	int c2, c3 = 50;
+	int c4, c5, c6 = 51;
 
 	while (i <= 57)
 	{
@@ -31,7 +25,7 @@ int main(void)
 			while (k <= 57)
 			{
 				l = c6;
-				while (l <= 57 )
+				while (l <= 57)
 				{
 					putchar(i);
 					putchar(j);
