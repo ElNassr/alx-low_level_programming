@@ -16,8 +16,8 @@ int main(void)
 	int c3 = 50;
 	int l = 51;
 	int c4 = 51;
-	int c4 = 51;
 	int c5 = 51;
+	int c6 = 51;
 
 	while (i <= 57)
 	{
@@ -27,7 +27,7 @@ int main(void)
 		while (j <= 57)
 		{
 			k = c3;
-			c6=c5;
+			c6 = c5;
 			while (k <= 57)
 			{
 				l = c6;
