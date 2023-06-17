@@ -8,10 +8,9 @@
 */
 int main(void)
 {
-	int i, j, k = 48;
-	int l, c1 = 49;
-	int c2, c3 = 50;
-	int c4, c5, c6 = 51;
+	int i, j, k, c1 = 48;
+	int l, c2 = 49;
+	int c2, c4, c5, c6 = 50;
 
 	while (i <= 57)
 	{
