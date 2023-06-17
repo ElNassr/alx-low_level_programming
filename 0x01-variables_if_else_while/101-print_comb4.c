@@ -13,10 +13,12 @@ int main(void)
 	int k = 50;
 	int c1 = 49;
 	int c2 = 50;
+	int c3 = 50;
 
 	while (i <= 55)
 	{
 		j = c1;
+		c2 = c3;
 		while (j <= 56)
 		{
 			k = c2;
@@ -37,6 +39,7 @@ int main(void)
 		}
 		i++;
 		c1++;
+		c3++;
 	}
 	putchar('\n');
 	return (0);
