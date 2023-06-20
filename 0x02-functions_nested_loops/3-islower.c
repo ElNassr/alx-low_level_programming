@@ -12,7 +12,7 @@ int _islower(int c)
 	int j = 122;
 
 	if ((c >= i) && (c <= j))
-		return (1)
+		return (1);
 	else
-		return (0)
+		return (0);
 }
