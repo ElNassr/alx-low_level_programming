@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
-* _islower -  function
+* _isalpha -  function
 * @c: char input to chack
 *
-* Return: 1 if lower, 0 otherwise
+* Return: 1 if alpha, 0 otherwise
 */
-int _islower(int c)
+int _isalpha(int c)
 {
 	int i = 97;
 	int j = 122;
