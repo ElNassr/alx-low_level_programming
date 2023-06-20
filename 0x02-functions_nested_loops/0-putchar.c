@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -8,6 +7,13 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	int i=0;
+	char s[]="_putchar";
+
+	for(i=0; i<7; i++)
+	{
+		putchar(s[i]);
+	}
+	putchar("\n");
 	return (0);
 }
