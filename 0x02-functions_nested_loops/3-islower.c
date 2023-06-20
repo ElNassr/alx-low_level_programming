@@ -11,8 +11,15 @@ int _islower(int c)
 	int i = 97;
 	int j = 122;
 
-	if ((c >= i) && (c <= j))
-		return (1);
+	if (c >= i)
+	{
+		if (c <= j)
+		{
+			return (1);
+		}
+	}
 	else
+	{
 		return (0);
+	}
 }
