@@ -10,8 +10,18 @@
 int print_last_digit(int n)
 {
 	int i = 0;
+	int j = 48;
+	int k = 0;
 
 	i = n % 10;
-	_putchar(i);
+	while (k < 10)
+	{
+		if ( i == k)
+		{
+			_putchar(j);
+		}
+		k++;
+		j++;
+	}
 	return(i);
 }
