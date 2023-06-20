@@ -3,8 +3,8 @@
 
 /**
 * _islower -  function
-* @parameterc: char input to chack
-* 
+* @c: char input to chack
+*
 * Return: 1 if lower, 0 otherwise
 */
 int _islower(int c)
