@@ -10,7 +10,7 @@
 int print_sign(int n)
 {
 	int p = 43;
-	int z = 79;
+	int z = 48;
 	int m = 45;
 
 	if (n < 0)
