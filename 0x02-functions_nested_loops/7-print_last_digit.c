@@ -16,12 +16,12 @@ int print_last_digit(int n)
 	i = n % 10;
 	while (k < 10)
 	{
-		if ( i == k)
+		if (k == i)
 		{
 			_putchar(j);
 		}
 		k++;
 		j++;
 	}
-	return(i);
+	return (i);
 }
