@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 
 /**
 * more_numbers - print numbers 10 times
@@ -10,7 +10,7 @@ void more_numbers(void)
 {
 	int i = 48;
 	int j = 49;
-	ink c = 0;
+	int c = 0;
 	int k = 0;
 
 	while (c < 10)
