@@ -27,5 +27,6 @@ void more_numbers(void)
 			i++;
 		}
 		c++;
+		putvhar('\n');
 	}
 }
