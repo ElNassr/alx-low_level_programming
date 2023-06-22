@@ -18,11 +18,11 @@ void more_numbers(void)
 		k = 0;
 		while (k <= 14)
 		{
-			if (k > 10)
+			if (k > 9)
 				putchar(j);
 			putchar(i);
 			if (k == 9)
-				i = 48;
+				i = 47;
 			k++;
 			i++;
 		}
