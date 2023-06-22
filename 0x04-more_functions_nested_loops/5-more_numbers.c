@@ -4,14 +4,13 @@
 * more_numbers - print numbers 10 times
 * no arguments
 *
-* does not return anything
+* No return
 */
 void more_numbers(void)
 {
 	int i = 48;
 	int j = 49;
-	int c = 0;
-	int k = 0;
+	int c, k = 0;
 
 	while (c < 10)
 	{
@@ -20,14 +19,10 @@ void more_numbers(void)
 		while (k <= 14)
 		{
 			if (k > 10)
-			{
 				putchar(j);
-			}
 			putchar(i);
 			if (k == 9)
-			{
 				i = 48;
-			}
 			k++;
 			i++;
 		}
