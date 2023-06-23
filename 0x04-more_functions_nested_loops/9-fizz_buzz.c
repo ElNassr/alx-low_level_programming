@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * fizz_buzz - function
+ * main - entry point - fizz_buzz - function
  *
  * Return:  0 on success
  */
