@@ -4,7 +4,7 @@ void print_diag_line(int j);
 
 /**
 * print_diagonal - print diagonal line
-* no arguments
+* @n: number of diagonals
 *
 * No return
 */
@@ -38,7 +38,7 @@ void print_diagonal(int n)
 
 /**
 * print_diag_line - function
-* @j: argument
+* @j: number of spaces befor diag
 *
 * No return
 */
