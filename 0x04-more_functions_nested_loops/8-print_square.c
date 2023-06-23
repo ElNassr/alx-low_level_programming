@@ -4,7 +4,7 @@ void print_hash(int);
 
 /**
 * print_square - print a square
-* no arguments
+* @n: size of square to print
 *
 * No return
 */
@@ -28,8 +28,8 @@ void print_square(int n)
 }
 
 /**
-* print_diag_line - function
-* @j: argument
+* print_hash - function to print hashes
+* @n: argument Number of hashes in one line
 *
 * No return
 */
