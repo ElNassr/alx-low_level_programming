@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int len(int n);
+
 /**
  * print_number - print numbers from input
  * @n: input number to print
