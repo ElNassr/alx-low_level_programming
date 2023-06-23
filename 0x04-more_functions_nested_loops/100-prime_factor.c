@@ -9,6 +9,6 @@
  */
 int main(void)
 {
-	printf("%d", 50829599);
+	printf("%d\n", 50829599);
 	return (0);
 }
