@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+void print_hashes(int n, int j);
+
+/**
+* print_triangle - print triangle with hashes
+* @n: size of triangles with hashes
+*
+* No return
+*/
+void print_triangle(int n)
+{
+	int j = 0;
+
+	if (n <= 0)
+	{
+		putchar('\n');
+	}
+	else
+	{
+		while (j < n)
+		{
+			print_hashes(j, (n - j));
+			putchar('\n');
+			j++;
+		}
+	}
+}
+
+/**
+* print_hashes - function to print one line
+* @n: number of spaces and hashes in one line
+* @j: number of spaces befor diag
+*
+* No return
+*/
+void print_hashes(int n, int j)
+{
+	int k = j;
+	int l = 0;
+	int s = 32;
+	int i = 35;
+
+	while (k > 0)
+	{
+		putchar(s);
+		k--;
+	}
+	while (l < n)
+	{
+		putchar(i);
+		l++;
+	}
+}
