@@ -7,7 +7,7 @@
  *
  * Return: 0 on success
  */
-int find_prime(void)
+int main(void)
 {
 	printf("%d", 50829599);
 	return (0);
