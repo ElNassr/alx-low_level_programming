@@ -18,7 +18,7 @@ void rev_string(char *s)
 		i++;
 	}
 	i--;
-	while ((i / 2) >= 0)
+	while (i >= j)
 	{
 		t = *(p + i);
 		*(p + i) = *(p + j);
