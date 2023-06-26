@@ -14,7 +14,7 @@ int _atoi(char *s)
 
 	while (*(s + i) != '\0')
 		i++;
-	for (j = 0; j < i)
+	for (j = 0; j < i; j++)
 	{
 		r = _isalpha(*(s + j));
 	}
