@@ -5,7 +5,7 @@ int _isalpha(int c);
  * _atoi: function that converts string to integer
  * @s: string that will be converted to integer
  *
- * retunr: returns an integer if exist, 0 otherwise
+ * Retunr: returns an integer if exist, 0 otherwise
  */
 int _atoi(char *s)
 {
