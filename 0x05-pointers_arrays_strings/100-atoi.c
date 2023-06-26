@@ -2,7 +2,7 @@
 int _isalpha(int c);
 
 /**
- * _atoi: function that converts string to integer
+ * _atoi - function that converts string to integer
  * @s: string that will be converted to integer
  *
  * Return: returns an integer if exist, 0 otherwise
