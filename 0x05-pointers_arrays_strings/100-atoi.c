@@ -1,4 +1,5 @@
 #include <stdio.h>
+int _isalpha(int c);
 
 /**
  * _atoi: function that converts string to integer
