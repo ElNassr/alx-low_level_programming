@@ -1,4 +1,4 @@
-#include <stdio.h>
+0_strings#include <stdio.h>
 
 /**
  * rev_string - reverse a string given in argument
@@ -22,7 +22,7 @@ void rev_string(char *s)
 	while ((i / 2) >= 0)
 	{
 		t = *(s + j);
-		*(s + j) = *(p + i);
+		*(s + j) = *(s + i);
 		*(s + i) = t;
 		i--;
 		j++;
