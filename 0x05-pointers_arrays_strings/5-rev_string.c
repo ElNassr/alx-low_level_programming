@@ -20,9 +20,9 @@ void rev_string(char *s)
 	i--;
 	while ((i / 2) >= 0)
 	{
-		t = *(p + j);
-		*(p + j) = *(p + i);
-		*(p + i) = t;
+		t = *(p + i);
+		*(p + i) = *(p + j);
+		*(p + j) = t;
 		i--;
 		j++;
 	}
