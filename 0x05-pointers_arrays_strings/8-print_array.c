@@ -13,7 +13,6 @@ void print_number(int n);
 void print_array(int *a, int n)
 {
 	int i = 0;
-	int l = 48;
 
 	for (i = 0; i < n; i++)
 	{
