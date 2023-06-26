@@ -19,9 +19,11 @@ void print_array(int *a, int n)
 	for (i = 0; i < n; i++)
 	{
 		print_number(*(a + i));
-		putchar(c);
-		putchar(s);
-
+		if (i != (n - 1))
+		{
+			putchar(c);
+			putchar(s);
+		}
 	}
 	putchar('\n');
 }
@@ -47,7 +49,7 @@ void print_number(int n)
 	if (n < 0)
 	{
 		putchar(m);
-		x = - n;
+		x = -n;
 	}
 	for (c = 0; c < 9; c++)
 	{
