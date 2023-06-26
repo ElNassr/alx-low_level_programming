@@ -17,9 +17,11 @@ void rev_string(char *s)
 		*(p + i) = *(s + i);
 		i++;
 	}
-	i -= 2;
+	i--;
 	while (i >= 0)
 	{
+		putchar(*(p + i));
+		putchar('\n');
 		*(s + j) = *(p + i);
 		i--;
 		j++;
