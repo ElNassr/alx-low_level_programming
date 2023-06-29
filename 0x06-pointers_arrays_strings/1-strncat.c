@@ -17,13 +17,13 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		i++;
 	}
-	for (c = 0; c < (n - 1); c++)
+	for (c = 0; c < n; c++)
 	{
 		*(dest + i + c) = *(src + c);
 	}
-/**	if (*(dest + i + n - 1) != '\0')
- *		*(dest + i + n) = '\0';
- */
+/*	if (*(dest + i + n - 1) != '\0')
+ 		*(dest + i + n - 2) = '\0';
+		*/
 	return (dest);
 
 }
