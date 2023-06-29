@@ -4,10 +4,10 @@
 void upperc(char *c);
 
 /**
- * string_toupper -  function
+ * string_toupper -  function to bring to upper
  * @c: char input to make upper
  *
- * Return: 1 if lower, 0 otherwise
+ * Return: the string in upper case
  */
 char *string_toupper(char *c)
 {
@@ -22,10 +22,10 @@ char *string_toupper(char *c)
 }
 
 /**
- * upperc -  function
+ * upperc -  function to bring caracter to upper
  * @c: char input to check
  *
- * Return:No return for this function
+ * Return: No return for this function
  */
 void upperc(char *c)
 {
