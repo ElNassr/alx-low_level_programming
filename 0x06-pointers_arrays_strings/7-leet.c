@@ -13,7 +13,7 @@ char *leet(char *c)
 	int o[] = {79, 48};
 	int t[] = {84, 55};
 	int l[] = {76, 49};
-	int j = 0;
+	int i = 0;
 
 	while (*(c + i) != '\0')
 	{
@@ -37,5 +37,7 @@ char *leet(char *c)
 		{
 			*(c + i) = l[1];
 		}
+		i++;
 	}
+	return (c);
 }
