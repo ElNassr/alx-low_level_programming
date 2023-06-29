@@ -24,13 +24,11 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	if (n <= j)
 		j = n;
-	if (i <= j)
-		j = i;
 	for (c = 0; c < j; c++)
 	{
 		*(dest + c) = *(src + c);
 	}
-	if (*(dest + n - 1) != '\0')
-		*(dest + n) = '\0';
+	for ( ; c < n; c++)
+		*(dest + c) = '\0';
 	return (dest);
 }
