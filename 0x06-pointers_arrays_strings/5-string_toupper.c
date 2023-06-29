@@ -18,7 +18,7 @@ char *string_toupper(char *c)
 		upperc((c+i));
 		i++;
 	}
-	return(c);
+	return (c);
 }
 
 /**
