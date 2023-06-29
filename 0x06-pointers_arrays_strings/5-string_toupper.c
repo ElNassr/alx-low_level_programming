@@ -7,7 +7,7 @@ void upperc(char *c);
  * string_toupper -  function to bring to upper
  * @c: char input to make upper
  *
- * Return: the string in upper case
+ * Return: return the string in upper case
  */
 char *string_toupper(char *c)
 {
@@ -15,7 +15,7 @@ char *string_toupper(char *c)
 
 	while (*(c + i) != '\0')
 	{
-		upperc((c+i));
+		upperc((c + i));
 		i++;
 	}
 	return (c);
