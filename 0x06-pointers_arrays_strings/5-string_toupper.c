@@ -16,6 +16,7 @@ char *string_toupper(char *c)
 	while (*(c + i) != '\0')
 	{
 		upperc((c+i));
+		i++;
 	}
 	return(c);
 }
@@ -28,8 +29,8 @@ char *string_toupper(char *c)
  */
 void upperc(char *c)
 {
-	int i = 65;
-	int j = 90;
+	int i = 97;
+	int j = 122;
 
 	if (*c >= i)
 	{
