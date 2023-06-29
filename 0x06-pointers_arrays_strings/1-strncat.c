@@ -24,7 +24,7 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	if (n <= j)
 		j = n;
-	for (c = 0; c < n; c++)
+	for (c = 0; c < j; c++)
 	{
 		*(dest + i + c) = *(src + c);
 	}
