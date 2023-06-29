@@ -31,7 +31,7 @@ int _strcmp(char *s1, char *s2)
 	}
 	else
 	{
-		for (i = 0; i < k; i++)
+		for (i = 0; i <= k; i++)
 		{
 			if (*(s1 + i) < *(s2 + i))
 			{
