@@ -1,17 +1,21 @@
 #include <stdio.h>
 
 /**
- * _strspn - function that gets the prefix of a substring
- * @haystack: string that contains the prefix
- * @needle: substring to look for in haystack
+ * _strstr - function that finds the first occurrence of a substring
+ * @haystack: string to search in
+ * @needle: substring to find
  *
- * Return: the number of bytes if the initial segment of s
+ * Return: pointer to the beginning of the located substring, or NULL if not found
  */
 char *_strstr(char *haystack, char *needle)
 {
 	int i = 0;
 	int j = 0;
 
+	if (*needle == '\0')
+	{
+		return (haystack);
+	}
 	while (*(haystack + i) != '\0')
 	{
 		j = 0;
