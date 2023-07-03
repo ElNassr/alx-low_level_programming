@@ -9,13 +9,10 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i = 0;
-	unsigned int j = 0;
-	unsigned int k = 0;
-	unsigned int e = 0;
-	unsigned int l = 0;
+	int i = 0;
+	int j = 0;
 
-	while (*(s + i) != '\0')
+	while (*(haystack + i) != '\0')
 	{
 		j = 0;
 		if (*(haystack + i) == *needle)
@@ -24,15 +21,19 @@ char *_strstr(char *haystack, char *needle)
 			{
 				if (*(haystack + i + j) == *(needle + j))
 				{
+					j++;
 					continue;
 				}
 				else
 				{
+					j++;
 					break;
 				}
+				j++;
 			}
 			return (haystack + i);
 		}
+		i++;
 	}
 	return (NULL);
 }
