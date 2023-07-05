@@ -10,17 +10,14 @@ int len(char *s, int *l);
  */
 void _print_rev_recursion(char *s)
 {
-	int l = 0;
-	int *p = &l;
+	int *p;
 
-	if (*p == 0)
-	{
 	len(s, p);
-	}
-	if (*p != 0)
+	if (*s != '\0')
 	{
 		(*p)--;
 		putchar(*(s + (*p)));
+		*(s + (*p)) = '\0';
 		_print_rev_recursion(s);
 	}
 	else
