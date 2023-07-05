@@ -1,4 +1,4 @@
-\#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 int len(char *s, int *l);
