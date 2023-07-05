@@ -30,10 +30,13 @@ void _print_rev_recursion(char *s)
  */
 int len(char *s, int *p)
 {
+	int i = 0;
+
 	if (*s != '\0')
 	{
 		*p++;
 		len((s + 1), p);
 	}
-	return (*p);
+	i = *p;
+	return (i);
 }
