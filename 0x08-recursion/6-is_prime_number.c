@@ -41,14 +41,14 @@ int prime(int n, int s, int *p)
 	}
 	else if ((n % (*p)) == 0)
 	{
-		return(0);
+		return (0);
 	}
 	else
 	{
 		(*p)++;
 		prime(n, s, p);
 	}
-	return(0);
+	return (1);
 }
 
 
