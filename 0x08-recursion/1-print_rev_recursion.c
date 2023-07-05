@@ -34,7 +34,7 @@ int len(char *s, int *p)
 
 	if (*s != '\0')
 	{
-		*p++;
+		(*p)++;
 		len((s + 1), p);
 	}
 	i = *p;
