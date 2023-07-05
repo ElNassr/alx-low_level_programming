@@ -11,7 +11,7 @@ int len(char *s, int *l);
  */
 void _print_rev_recursion(char *s)
 {
-	int l = 1;
+	int l = 0;
 	int *p = &l;
 
 	len(s, p);
@@ -38,6 +38,5 @@ int len(char *s, int *p)
 		len((s + 1), p);
 	}
 	i = *p;
-	printf("%d\n", *p);
 	return (i);
 }
