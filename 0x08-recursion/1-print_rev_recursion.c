@@ -25,7 +25,7 @@ void _print_rev_recursion(char *s)
 /**
  * len - returns the length of a string
  * @s: string to find len for
- *
+ * @p: pointer to use for length calculation
  * Return: returns in integer
  */
 int len(char *s, int *p)
