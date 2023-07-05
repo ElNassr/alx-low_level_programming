@@ -14,7 +14,7 @@ void _print_rev_recursion(char *s)
 	int l = 1;
 	int *p = &l;
 
-	l = len(s, p);
+	len(s, p);
 	if (s != '\0')
 	{
 		putchar(*(s + l));
