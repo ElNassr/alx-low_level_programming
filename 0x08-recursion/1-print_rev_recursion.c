@@ -35,8 +35,5 @@ int len(char *s, int *p)
 		*p++;
 		len((s + 1), p);
 	}
-	else
-	{
-		return (*p);
-	}
+	return (*p);
 }
