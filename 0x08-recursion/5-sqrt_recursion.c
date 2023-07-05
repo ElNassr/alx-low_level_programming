@@ -46,5 +46,5 @@ int square(int n, int *p)
 			square(n, p);
 		}
 	}
-	return(*p);
+	return (*p);
 }
