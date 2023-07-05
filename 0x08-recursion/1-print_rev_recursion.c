@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int len(char *s);
 
@@ -22,7 +23,7 @@ void _print_rev_recursion(char *s)
 }
 
 /**
- * len : returns the length of a string
+ * len - returns the length of a string
  * @s: string to find len for
  *
  * Return: returns in integer
@@ -40,5 +41,6 @@ int len(char *s)
 	{
 		return (i);
 	}
+	printf("%d\n", i);
 	return (i);
 }
