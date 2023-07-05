@@ -1,4 +1,4 @@
-#include <stdio.h>
+\#include <stdio.h>
 #include <stdlib.h>
 
 int len(char *s, int *l);
@@ -38,5 +38,6 @@ int len(char *s, int *p)
 		len((s + 1), p);
 	}
 	i = *p;
+	printf("%d\n", *p);
 	return (i);
 }
