@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int prime(int n, int s, int *p);
-int square(int n, int *p);
+int prime(int n, int *p);
 
 /**
  * is_prime_number - checks if n is prime number
