@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int len(char *s, int *l);
 
@@ -19,7 +18,7 @@ void _print_rev_recursion(char *s)
 	if (*s != '\0')
 	{
 		putchar(*(s + l));
-		_print_rev_recursion(s - 1);
+		_print_rev_recursion(s + 1);
 	}
 }
 
