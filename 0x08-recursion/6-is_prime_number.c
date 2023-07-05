@@ -13,7 +13,7 @@ int is_prime_number(int n)
 {
 	int i = 0;
 	int *p = &i;
-	int j = 0;
+	int j = 2;
 	int *w = &j;
 
 	i = square(n, p);
@@ -34,6 +34,10 @@ int prime(int n, int s, int *p)
 	if (n <= 1)
 	{
 		return (0);
+	}
+	else if ((n == 2) || (n == 3))
+	{
+		return (1);
 	}
 	else if ((*p) >= s)
 	{
