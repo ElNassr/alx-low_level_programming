@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void len(char *s, int *p);
+
 /**
  * _strlen_recursion - returns the length of a string
  * @s: string to fin length for
@@ -27,7 +29,7 @@ void len(char *s, int *p)
 	if (*s != '\0')
 	{
 		(*p)++;
-		len(s + 1);
+		len(s + 1, p);
 	}
 
 }
