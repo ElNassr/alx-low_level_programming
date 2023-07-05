@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 int prime(int n, int s, int *p);
 int square(int n, int *p);
 
@@ -17,6 +17,7 @@ int is_prime_number(int n)
 	int *w = &j;
 
 	i = square(n, p);
+	printf("%d\n", i);
 	j = prime(n, i, w);
 	return (j);
 }
@@ -31,6 +32,7 @@ int is_prime_number(int n)
  */
 int prime(int n, int s, int *p)
 {
+	printf("%d\n", *p);
 	if (n <= 1)
 	{
 		return (0);
