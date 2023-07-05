@@ -17,6 +17,7 @@ int is_palindrome(char *s)
 
 	l = len(s, p) - 2;
 	i = pal(s, l);
+	return (i);
 }
 
 /**
@@ -61,4 +62,5 @@ int len(char *s, int *p)
 	{
 		return (*p);
 	}
+	return (*p);
 }
