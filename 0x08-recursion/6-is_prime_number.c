@@ -43,5 +43,5 @@ int prime(int n, int *p)
 		(*p)++;
 		prime(n, p);
 	}
-	return (0);
+	return (1);
 }
