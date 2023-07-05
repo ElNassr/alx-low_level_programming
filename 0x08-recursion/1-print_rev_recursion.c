@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int len(char *s, int *l);
+void len(char *s, int *l);
 
 /**
  * _print_rev_recursion - prints a string in reverse
@@ -15,11 +15,10 @@ void _print_rev_recursion(char *s)
 	int *p = &l;
 
 	l = len(s, p);
-	if (l >= 0)
+	if (s != '\0')
 	{
 		putchar(*(s + l));
-		l--;
-		_print_rev_recursion(s + l - 1);
+		_print_rev_recursion(s - 1);
 	}
 }
 
@@ -29,16 +28,11 @@ void _print_rev_recursion(char *s)
  *
  * Return: returns in integer
  */
-int len(char *s, int *p)
+void len(char *s, int *p)
 {
 	if (*s != '\0')
 	{
 		*p++;
-		len(s + 1);
-	}
-	else
-	{
-		printf("%d\n", *p);
-		return (i);
+		len((s + 1), p);
 	}
 }
