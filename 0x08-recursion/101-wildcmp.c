@@ -46,7 +46,7 @@ int cmp(char *s1,char *s2, int l)
 	}
 	else if (*s1 != '\0')
 	{
-		cmp(s1 + 1, s2 + 1);
+		cmp(s1 + 1, s2 + 1, l);
 	}
 	else
 	{
