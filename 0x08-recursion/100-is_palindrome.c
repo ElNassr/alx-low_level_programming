@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 int pal(char *s, int l);
 int len(char *s, int *p);
 
@@ -29,6 +29,7 @@ int is_palindrome(char *s)
  */
 int pal(char *s, int l)
 {
+	printf("%c,,,,,%c\n", *s, *(s + l));
 	if (*s != *(s + l))
 	{
 		return (0);
@@ -49,7 +50,7 @@ int pal(char *s, int l)
  * @s: string to fin len dor
  * @p: pointer to increment each time
  *
- *return: no return for this function
+ * Return: return the len for this function
  */
 int len(char *s, int *p)
 {
