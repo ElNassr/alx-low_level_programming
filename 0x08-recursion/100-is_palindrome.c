@@ -42,7 +42,6 @@ int pal(char *s, int l)
 	{
 		return (1);
 	}
-	return (1);
 }
 
 /**
