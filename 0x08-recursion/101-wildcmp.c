@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int cmp(char *s1,char *s2, int l);
+int cmp(char *s1, char *s2, int l);
 int len(char *s, int *p);
 
 /**
@@ -35,14 +35,11 @@ int wildcmp(char *s1, char *s2)
  *
  * Return: 1 if pal, o if not
  */
-int cmp(char *s1,char *s2, int l)
+int cmp(char *s1, char *s2, int l)
 {
 	if (*s1 != *(s2))
 	{
-		if (*s2 != 42)
-		{
-			return (0);
-		}
+		return (0);
 	}
 	else if (*s1 != '\0')
 	{
