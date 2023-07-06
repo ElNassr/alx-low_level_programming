@@ -29,7 +29,7 @@ int is_palindrome(char *s)
  */
 int pal(char *s, int l)
 {
-	printf("%c,,,,%c\n", *s, *(s + l))
+	printf("%c,,,,%c\n", *s, *(s + l));
 	if (*s != *(s + l))
 	{
 		return (0);
