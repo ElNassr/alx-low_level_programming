@@ -37,7 +37,7 @@ int pal(char *s, int l)
 	{
 		pal(s + 1, l - 2);
 	}
-	else
+	else if (*s != *(s + 1))
 	{
 		return (0);
 	}
