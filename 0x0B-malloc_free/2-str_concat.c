@@ -17,6 +17,7 @@ char *str_concat(char *s1, char *s2)
 
 	if ((s1 == NULL) && (s2 != NULL))
 	{
+		printf("S1 is NULL");
 		return (s2);
 	}
 	if ((s2 == NULL) && (s1 != NULL))
