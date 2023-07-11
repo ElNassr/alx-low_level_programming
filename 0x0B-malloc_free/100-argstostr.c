@@ -47,6 +47,7 @@ char *argstostr(int ac, char **av)
 		p[c + 1] = '\n';
 		c += 2;
 		*av++;
+		printf("%s\n", *av);
 	}
 	return (p);
 }
