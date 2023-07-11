@@ -37,17 +37,14 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		j = 0;
-		while (*av[j] != '\0')
+		while (av[i][j] != '\0')
 		{
-			p[c] = *av[j];
+			p[c] = av[i][j];
 			j++;
 			c++;
 		}
-		p[c] = *av[j];
-		p[c + 1] = '\n';
-		c += 2;
-		*av++;
-		printf("%s\n", *av);
+		p[c] = '\n';
+		c += 1;
 	}
 	return (p);
 }
