@@ -7,7 +7,7 @@ int countw(char *str);
  * strtow - split string into words
  * @str: string to split
  *
- * @Return: pointer to the array of words splitted
+ * Return: pointer to the array of words splitted
  */
 char **strtow(char *str)
 {
@@ -17,7 +17,7 @@ char **strtow(char *str)
 	char **p;
 
 	c = countw(str);
-	p = malloc(c * sizeof(char *));
+	p = malloc((c + 1) * sizeof(char *));
 	if (p == NULL)
 	{
 		return (NULL);
@@ -79,7 +79,7 @@ char **strtow(char *str)
  * countw - count string by words
  * @str: string to count words for
  *
- * @Return: Number of words in string
+ * Return: Number of words in string
  */
 int countw(char *str)
 {
