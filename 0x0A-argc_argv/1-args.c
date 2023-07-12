@@ -16,8 +16,12 @@ int main(int argc, char *argv[])
 	{
 		return (argc);
 	}
-	else
+	else if (argc > 0)
 	{
 		return (0);
+	}
+	else if (argv[0][0] == 0)
+	{
+		return (argv[0][0]);
 	}
 }
