@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		{
 			k++;
 		}
-		for (j = k; j < k; j--)
+		for (j = 0; j < k; j++)
 		{
 			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
