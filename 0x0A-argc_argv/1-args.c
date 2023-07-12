@@ -12,15 +12,7 @@ int main(int argc, char *argv[])
 {
 
 	printf("%d\n", argc);
-	if (argc == 0)
-	{
-		return (argc);
-	}
-	else if (argc > 0)
-	{
-		return (0);
-	}
-	else if (argv[0][0] == 0)
+	if (argv[0][0] == 0)
 	{
 		return (argv[0][0]);
 	}
