@@ -22,14 +22,17 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	a = n / 25;
-	n %= 25;
-	b = n / 10;
-	n %= 10;
-	c = n / 5;
-	n %= 5;
-	d = n / 2;
-	n %= 2;
-	printf("%d\n", (a + b + c + d + n));
+	else
+	{
+		a = n / 25;
+		n %= 25;
+		b = n / 10;
+		n %= 10;
+		c = n / 5;
+		n %= 5;
+		d = n / 2;
+		n %= 2;
+		printf("%d\n", (a + b + c + d + n));
+	}
 	return (0);
 }
