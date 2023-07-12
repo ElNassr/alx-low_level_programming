@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - program entry point
  * @argc: number of argument given to the program
@@ -10,6 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i, j, k, sum = 0;
+
 	if (argc == 1)
 	{
 		printf("0\n");
