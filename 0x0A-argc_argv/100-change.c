@@ -18,6 +18,10 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	n = atoi(argv[1]);
+	if (n <= 0)
+	{
+		printf("0\n");
+	}
 	a = n / 25;
 	n %= 25;
 	b = n / 10;
