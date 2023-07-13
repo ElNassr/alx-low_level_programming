@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _calloc - allocates memory and initialise to 0
@@ -10,7 +11,6 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i = 0;
 	void *p;
 
 	if ((nmemb == 0) || (size == 0))
@@ -22,9 +22,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < nmemb; i++)
-	{
-		*(((int *)p) + i) = 0;
-	}
+	memset(p, 0, nmemb * size);
 	return (p);
 }
