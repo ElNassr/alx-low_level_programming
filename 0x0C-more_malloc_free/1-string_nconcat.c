@@ -9,7 +9,7 @@
   *
   * Return: a pointer to the concatenated string
   */
-char *string_concat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i = 0;
 	unsigned int j = 0;
@@ -30,7 +30,7 @@ char *string_concat(char *s1, char *s2, unsigned int n)
 			j++;
 		}
 	}
-	if (j <= n)
+	if (j >= n)
 	{
 		j = n;
 	}
