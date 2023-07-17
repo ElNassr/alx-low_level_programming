@@ -4,11 +4,10 @@
 /**
  * main - entry point
  *
- * Return: returns 0 on success 
+ * Return: returns 0 on success
  */
 int main()
 {
-	printf(__BASE_FILE__);
-	printf("\n");
+	printf("%s\n", __BASE_FILE__);
 	return (0);
 }
