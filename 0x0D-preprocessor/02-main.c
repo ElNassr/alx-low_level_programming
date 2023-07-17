@@ -8,7 +8,6 @@
  */
 int main()
 {
-	printf(__BASE_FILE__);
-	printf("\n");
+	printf("__BASE_FILE__\n");
 	return (0);
 }
