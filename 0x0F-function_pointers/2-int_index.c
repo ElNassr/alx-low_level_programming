@@ -7,7 +7,7 @@
  * @size: size of array
  * @cmp: pointer to function that compares two integers
  *
- * Return: returns the index of first element for which cmp does not retun 0 for
+ * Return: the index of first element for which cmp does not retun 0 for
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
