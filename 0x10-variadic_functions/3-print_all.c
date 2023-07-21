@@ -31,7 +31,7 @@ void print_all(const char * const format, ...)
 			printf("%s", s);
 			break;
 		case 'f':
-			printf("%f", va_arg(p, float));
+			printf("%f", va_arg(p, double));
 			break;
 		default:
 			i++;
