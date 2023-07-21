@@ -10,7 +10,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list p;
-	unsigned i = 0;
+	unsigned int i = 0;
 	char *s;
 
 	va_start(p, format);
@@ -29,6 +29,9 @@ void print_all(const char * const format, ...)
 			if (!s)
 				s = "(nil)";
 			printf("%s", s);
+			break;
+		case 'f':
+			printf("%f", va_arg(p, float));
 			break;
 		default:
 			i++;
