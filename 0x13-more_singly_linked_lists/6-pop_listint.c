@@ -6,7 +6,7 @@
  * pop_listint - delete the head node of list
  * @head: pointer to head
  *
- * return: the head nodes data
+ * Return: the head nodes data
  *
  */
 int pop_listint(listint_t **head)
@@ -26,5 +26,4 @@ int pop_listint(listint_t **head)
 		free(tmp);
 	}
 	return (i);
-
 }
