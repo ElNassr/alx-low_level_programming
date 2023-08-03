@@ -9,8 +9,10 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n, t = 1;
-	int i, j, c = 0;
+	unsigned int n = 0;
+	unsigned int t;
+	int i = 0;
+	int j, c;
 	int z = 48;
 	int o = 49;
 
@@ -38,6 +40,6 @@ unsigned int binary_to_uint(const char *b)
 			n += t;
 		}
 		j--;
-	}
+		}
 	return(n);
 }
