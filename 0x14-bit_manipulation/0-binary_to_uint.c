@@ -16,6 +16,10 @@ unsigned int binary_to_uint(const char *b)
 	int z = 48;
 	int o = 49;
 
+	if (b == NULL)
+	{
+		return (0);
+	}
 	while (b[i] != '\0')
 	{
 		if ((b[i] != z ) && (b[i] != o))
@@ -41,5 +45,5 @@ unsigned int binary_to_uint(const char *b)
 		}
 		j--;
 		}
-	return(n);
+	return (n);
 }
