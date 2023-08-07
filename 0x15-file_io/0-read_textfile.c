@@ -1,6 +1,7 @@
+#include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
+#include "main.h"
 
 /**
  * read_textfile - reads a text from file and print
@@ -12,29 +13,29 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
+	FILE *fp;
 	char *buffer;
 	ssize_t bytes_read, bytes_written;
 
 	if (filename == NULL)
 		return (0);
 
-	fd = open(filename, O_RDONLY);
-	if (fd == -1)
+	fp = fopen(filename, "r");
+	if (fp == NULL)
 		return (0);
 
-	buffer = malloc(letters);
+	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
 	{
-		close(fd);
+		fclose(fp);
 		return (0);
 	}
 
-	bytes_read = read(fd, buffer, letters);
-	if (bytes_read == -1)
+	bytes_read = fread(buffer, sizeof(char), letters, fp);
+	if (bytes_read == 0)
 	{
 		free(buffer);
-		close(fd);
+		fclose(fp);
 		return (0);
 	}
 
@@ -42,11 +43,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (bytes_written != bytes_read)
 	{
 		free(buffer);
-		close(fd);
+		fclose(fp);
 		return (0);
 	}
 
 	free(buffer);
-	close(fd);
+	fclose(fp);
 	return (bytes_written);
 }
